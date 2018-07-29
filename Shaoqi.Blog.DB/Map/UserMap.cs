@@ -7,9 +7,9 @@ using System.Text;
 
 namespace Shaoqi.Blog.DB.Map
 {
-    public class UserMap
+    public class User1Map
     {
-        public UserMap(EntityTypeBuilder<User> entityMap, string schema = "dbo")
+        public User1Map(EntityTypeBuilder<User> entityMap, string schema = "dbo")
         {
             entityMap.ToTable(schema + ".User");
             entityMap.HasKey(a => a.FID);

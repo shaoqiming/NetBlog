@@ -7,7 +7,7 @@ namespace Shaoqi.Blog.Service
     {
         public string Add()
         {
-            USerBF bf = new USerBF();
+            USer1Bf bf = new USer1Bf();
             bf.AddUser(null);
             bf.Submit();
             return "";

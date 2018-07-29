@@ -7,13 +7,13 @@ using System.Text;
 
 namespace Shaoqi.Blog.Core
 {
-    public class UnitOfData : DbContext, IUnitOfData
+    public partial class UnitOfData : DbContext, IUnitOfData
     {
         protected string ConnString { get; set; }
 
-        public int submit()
+        public int Submit()
         {
-           return base.SaveChanges();
+            return base.SaveChanges();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -22,7 +22,7 @@ namespace Shaoqi.Blog.Core
         }
         public void Dispose()
         {
-            this.Dispose();
+            base.Dispose();
         }
 
 

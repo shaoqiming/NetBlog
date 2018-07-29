@@ -37,7 +37,7 @@ namespace Shaoqi.Blog.BF
 
         public int Submit()
         {
-            return UnitOfData.submit();
+            return UnitOfData.Submit();
         }
 
         public void Dispose()

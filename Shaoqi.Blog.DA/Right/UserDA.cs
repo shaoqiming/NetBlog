@@ -1,11 +1,9 @@
-﻿using Shaoqi.Blog.Api;
-using Shaoqi.Blog.Core;
-using Shaoqi.Blog.Data;
+﻿
 using System;
-using System.Collections.Generic;
-using System.Text;
+using Shaoqi.Blog.Api;
+using Shaoqi.Blog.Data.Right;
 
-namespace Shaoqi.Blog.DA
+namespace Shaoqi.Blog.DA.Right
 {
     public class UserDa: BlogRepository<User>
     {
